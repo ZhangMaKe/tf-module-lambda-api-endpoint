@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.1.0...v1.1.1) (2025-06-01)
+
+
+### Bug Fixes
+
+* Merge pull request [#3](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/issues/3) from ZhangMaKe/fix/fix-output-references ([699579d](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/699579dd5f355bb07ded425a019369527df00046))
+
 # [1.1.0](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.0.0...v1.1.0) (2025-06-01)
 
 
