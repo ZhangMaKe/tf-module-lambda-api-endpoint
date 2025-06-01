@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.0.0...v1.1.0) (2025-06-01)
+
+
+### Features
+
+* added outputs and updated readme ([540055e](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/540055ebcb78f09a739db9bfe279fb28e519d47b))
+
 # 1.0.0 (2025-06-01)
 
 
