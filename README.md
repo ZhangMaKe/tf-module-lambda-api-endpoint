@@ -57,7 +57,7 @@ The module outputs the following attributes:
 
 - `lambda_function_arn`: The ARN of the created Lambda function
 - `lambda_function_name`: The name of the Lambda function
-- `lambda_invoke_arn`: The ARN to be used for invoking the Lambda function
+- `lambda_function_invoke_arn`: The ARN to be used for invoking the Lambda function
 - `api_integration_id`: The ID of the API Gateway integration
 - `api_route_id`: The ID of the API Gateway route
 
