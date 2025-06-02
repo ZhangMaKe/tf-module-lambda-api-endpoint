@@ -1,5 +1,7 @@
 # Lambda API Endpoint Terraform Module
 
+[![Terraform CI](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/actions/workflows/test.yml/badge.svg)](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/actions/workflows/test.yml)
+
 This Terraform module creates an AWS Lambda function and integrates it with an API Gateway HTTP API endpoint. It provides a complete solution for deploying serverless API endpoints using AWS Lambda and API Gateway.
 
 ## Features
