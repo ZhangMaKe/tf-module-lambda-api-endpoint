@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.1.1...v1.1.2) (2025-06-02)
+
+
+### Bug Fixes
+
+* Merge pull request [#4](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/issues/4) from ZhangMaKe/feature/add-badge ([d4275fb](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/d4275fbbc9c3772b73e24a88aa214f0f43de0ed8))
+
 ## [1.1.1](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.1.0...v1.1.1) (2025-06-01)
 
 
