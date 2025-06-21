@@ -7,16 +7,7 @@ on:
   pull_request:
 
 jobs:
-  trivy:
-    name: Trivy Scan
-    runs-on: ubuntu-latest
-    steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
-    
-        - name: Run Trivy on Terraform Code
-          uses: aquasecurity/trivy-action@0.28.0
-          with:
-            scan-type: config
-            scan-ref: .
-            exit-code: 1
+  tf-test:
+    uses: ZhangMaKe/workflow-library/.github/workflows/terraform-test.yml@main
+    with:
+      scan-ref: '.'
