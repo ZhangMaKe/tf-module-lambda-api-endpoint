@@ -19,6 +19,8 @@ resource "aws_apigatewayv2_route" "apigw_route" {
   api_id    = var.api_id
   route_key = "${var.http_route_key} /${var.route_key}"
   target    = "integrations/${aws_apigatewayv2_integration.apigw_integration.id}"
+  authorizer_id = var.authoriser_id
+  authorization_type = var.authoriser_id ? "CUSTOM" : "NONE"
 }
 
 resource "aws_lambda_permission" "aws_lambda_permission" {

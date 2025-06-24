@@ -53,3 +53,9 @@ variable "route_key" {
   description = "The route key for the API Gateway route."
   type        = string
 }
+
+variable "authoriser_id" {
+  description = "The ID of the Lambda authorizer to use for the API Gateway route."
+  type        = string
+  default     = null
+}
