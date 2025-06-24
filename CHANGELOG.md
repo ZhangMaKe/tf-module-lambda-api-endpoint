@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.2.0...v1.2.1) (2025-06-24)
+
+
+### Bug Fixes
+
+* updated condition expression that determines whether auth should be applied ([485b638](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/485b638f353f09a72985804a6975805f635369c6))
+
 # [1.2.0](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.1.2...v1.2.0) (2025-06-24)
 
 
