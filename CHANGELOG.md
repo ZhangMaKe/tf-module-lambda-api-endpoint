@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.1.2...v1.2.0) (2025-06-24)
+
+
+### Features
+
+* added option for api route authoriser ([698d0d2](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/698d0d23202894e3bdca29bd9c7ebebb448c0443))
+
 ## [1.1.2](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.1.1...v1.1.2) (2025-06-02)
 
 
