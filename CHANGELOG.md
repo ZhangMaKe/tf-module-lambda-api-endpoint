@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.2.1...v1.2.2) (2025-06-25)
+
+
+### Bug Fixes
+
+* reverse ternary logic ([f501d6f](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/f501d6f1513f2d1b7856af1085386f6747614bbf))
+
 ## [1.2.1](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.2.0...v1.2.1) (2025-06-24)
 
 
