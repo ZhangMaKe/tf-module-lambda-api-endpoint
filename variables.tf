@@ -59,3 +59,13 @@ variable "authoriser_id" {
   type        = string
   default     = null
 }
+
+variable "authoisation_type" {
+  description = "The type of authorization for the API Gateway route."
+  type        = string
+  default     = "NONE"
+  validation {
+    condition     = contains(["NONE", "AWS_IAM", "CUSTOM", "JWT"], var.authoisation_type)
+    error_message = "Authorization type must be one of: NONE, AWS_IAM, JWT, or CUSTOM."
+  }
+}
