@@ -52,6 +52,8 @@ module "lambda_api_endpoint" {
 | api_execution_arn | The execution ARN of the API Gateway API | `string` | n/a | yes |
 | http_route_key | The HTTP method for the API Gateway route (GET, PUT, POST, DELETE) | `string` | n/a | yes |
 | route_key | The route key for the API Gateway route | `string` | n/a | yes |
+| authorisation_type | The type of authorisation to use for the route | `string` | `NONE` | no |
+
 
 ## Outputs
 
