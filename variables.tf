@@ -65,7 +65,7 @@ variable "authorisation_type" {
   type        = string
   default     = "NONE"
   validation {
-    condition     = contains(["NONE", "AWS_IAM", "CUSTOM", "JWT"], var.authoisation_type)
+    condition     = contains(["NONE", "AWS_IAM", "CUSTOM", "JWT"], var.authorisation_type)
     error_message = "Authorization type must be one of: NONE, AWS_IAM, JWT, or CUSTOM."
   }
 }
