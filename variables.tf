@@ -60,7 +60,7 @@ variable "authoriser_id" {
   default     = null
 }
 
-variable "authoisation_type" {
+variable "authorisation_type" {
   description = "The type of authorization for the API Gateway route."
   type        = string
   default     = "NONE"
