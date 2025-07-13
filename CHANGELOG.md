@@ -1,3 +1,11 @@
+## [1.3.3](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.3.2...v1.3.3) (2025-07-13)
+
+
+### Bug Fixes
+
+* validation condition for authorisation type ([f356308](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/f356308213cd113a5c56ee2cf710266067508fee))
+* validation condition ref to var for authorisation type ([d0dcc33](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/d0dcc33a9773398ba736494a04d6c18f22b4f938))
+
 ## [1.2.2](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.2.1...v1.2.2) (2025-06-25)
 
 
