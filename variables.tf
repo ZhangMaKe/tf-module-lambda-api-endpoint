@@ -69,3 +69,9 @@ variable "authorisation_type" {
     error_message = "Authorization type must be one of: NONE, AWS_IAM, JWT, or CUSTOM."
   }
 }
+
+variable "include_lambda_log_group" {
+  type = bool
+  default = true
+  description = "whether or not to create the cloudwatch logs group for the lambda function"
+}
