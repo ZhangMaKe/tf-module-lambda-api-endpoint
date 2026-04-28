@@ -1,11 +1,12 @@
 module "lambda_function" {
-  source = "git::https://github.com/ZhangMaKe/tf-module-lambda-function.git?ref=v1.0.1"
+  source = "git::https://github.com/ZhangMaKe/tf-module-lambda-function.git?ref=v1.5.0"
     output_path = var.lambda_output_path
     role_arn    = var.lambda_exec_role_arn
     source_file = var.source_file_location
     function_name = var.function_name
     enable_tracing = var.enable_tracing
     environment_variables = var.environment_variables
+    include_log_group = var.include_lambda_log_group
 }
 
 resource "aws_apigatewayv2_integration" "apigw_integration" {

@@ -53,6 +53,7 @@ module "lambda_api_endpoint" {
 | http_route_key | The HTTP method for the API Gateway route (GET, PUT, POST, DELETE) | `string` | n/a | yes |
 | route_key | The route key for the API Gateway route | `string` | n/a | yes |
 | authorisation_type | The type of authorisation to use for the route | `string` | `NONE` | no |
+| include_lambda_log_group |  Boolean value to indicate whether to create a CloudWatch Log Group for the Lambda Function logs | `bool` | `true` | no
 
 
 ## Outputs
