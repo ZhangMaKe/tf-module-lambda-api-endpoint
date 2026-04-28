@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.3.3...v1.4.0) (2026-04-28)
+
+
+### Features
+
+* incremented lambda module version, introduced include_lambda_log_group var, updated docs ([a728103](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/a728103b0befdeb9bc26c62ec2c02585b533ab60))
+* Merge pull request [#12](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/issues/12) from ZhangMaKe/feature/use-new-version-of-lambda-module ([e31044a](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/e31044ae301b839c6faf888dc5615b95543f7b59))
+
 ## [1.3.3](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.3.2...v1.3.3) (2025-07-13)
 
 
