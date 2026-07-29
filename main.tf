@@ -1,7 +1,7 @@
 module "lambda_function_with_iam_role_and_policies" {
   source = "git::https://github.com/ZhangMaKe/tf-module-lambda-function-with-iam-role-and-policies.git?ref=v1.3.0"
 
-  role_name = "${var.project_name}-${var.function_name}-function-role"
+  role_name = var.role_name
   role_policies = var.role_policies
 
   precreated_policy_arns = var.precreated_policy_arns

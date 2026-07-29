@@ -13,6 +13,11 @@ variable "function_name" {
   type        = string
 }
 
+variable "role_name" {
+  description = "The name of the IAM role for the Lambda function."
+  type        = string
+}
+
 variable "enable_tracing" {
   description = "Whether to enable X-Ray tracing for the Lambda function."
   type        = bool
