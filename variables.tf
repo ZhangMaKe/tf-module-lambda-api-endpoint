@@ -75,3 +75,18 @@ variable "include_lambda_log_group" {
   default = true
   description = "whether or not to create the cloudwatch logs group for the lambda function"
 }
+
+variable "role_policies" {
+  type = list(object({
+    name = string
+    actions = list(string)
+    resources = list(string)
+  }))
+  description = "A list of iam policy objects containing name, actions, and resources, specifying the permissions to be given to the role."
+}
+
+variable "precreated_policy_arns" {
+  description = "A map of existing IAM policy ARNs and identifiers to attach to the role."
+  type = map(string)
+  default = {}
+}
