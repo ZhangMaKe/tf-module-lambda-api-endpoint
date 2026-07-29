@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.5.0...v1.5.1) (2026-07-29)
+
+
+### Bug Fixes
+
+* Merge pull request [#14](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/issues/14) from ZhangMaKe/fix/remove-unneeded-lambda_exec_role_arn-var ([e2bdb77](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/e2bdb77aa3be561329b00baa4d3a4f1a77031606))
+* removed lambda_exec_role_arn var ([8e58260](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/8e582608776fe5ec9facaeb5f7603b44395401fb))
+
 # [1.5.0](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.4.0...v1.5.0) (2026-07-29)
 
 
