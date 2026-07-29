@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.4.0...v1.5.0) (2026-07-29)
+
+
+### Features
+
+* Added support for creating IAM role, and a set of IAM policies for the Lambda function. ([575f058](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/575f05811cd74b2e0c4d5346ba59135608c3e062))
+* Merge pull request [#13](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/issues/13) from ZhangMaKe/feat/allow-creation-of-iam-role-and-policies ([b6a2b54](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/commit/b6a2b5461b4e08dd3fbb29f7e25009d08af7fd1a))
+
 # [1.4.0](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/compare/v1.3.3...v1.4.0) (2026-04-28)
 
 
