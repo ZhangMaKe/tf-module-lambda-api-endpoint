@@ -22,7 +22,6 @@ module "lambda_api_endpoint" {
 
   # Lambda Function Configuration
   lambda_output_path    = "./lambda_function.zip"
-  lambda_exec_role_arn  = "arn:aws:iam::123456789012:role/lambda-execution-role"
   source_file_location  = "./src/lambda_function.py"
   function_name         = "my-api-function"
   enable_tracing        = true
@@ -36,6 +35,16 @@ module "lambda_api_endpoint" {
   api_execution_arn = "arn:aws:execute-api:region:account-id:api-id"
   http_route_key   = "GET"
   route_key        = "my-endpoint"
+
+  role_policies = [
+    {
+      name = "${var.project_name}-submit-prediction-role-gamedata-dynamodb-policy"
+      actions = ["dynamodb:PutItem"]
+      resources = [aws_dynamodb_table.single_table.arn]
+    }
+  ]
+
+  precreated_policy_arns = { cloudwatch_logs_policy = aws_iam_policy.cloudwatch_logs_policy.arn }
 }
 ```
 
@@ -44,7 +53,6 @@ module "lambda_api_endpoint" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | lambda_output_path | The path where the Lambda function zip file will be saved | `string` | n/a | yes |
-| lambda_exec_role_arn | The ARN of the IAM role that the created Lambda function will assume | `string` | n/a | yes |
 | source_file_location | The path to the source file for the Lambda function | `string` | n/a | yes |
 | function_name | The name of the Lambda function | `string` | n/a | yes |
 | enable_tracing | Whether to enable X-Ray tracing for the Lambda function | `bool` | `false` | no |
@@ -56,6 +64,7 @@ module "lambda_api_endpoint" {
 | authorisation_type | The type of authorisation to use for the route | `string` | `NONE` | no |
 | include_lambda_log_group |  Boolean value to indicate whether to create a CloudWatch Log Group for the Lambda Function logs | `bool` | `true` | no |
 | role_policies | A list of iam policy objects | `list(object)` | n/a | yes |
+| role_name | The name of the IAM role to create | `string` | n/a | yes |
 
 
 ## Outputs
