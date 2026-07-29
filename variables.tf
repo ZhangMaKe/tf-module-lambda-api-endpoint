@@ -3,11 +3,6 @@ variable "lambda_output_path" {
   type        = string
 }
 
-variable "lambda_exec_role_arn" {
-  description = "The ARN of the IAM role that the Lambda function will assume."
-  type        = string
-}
-
 variable "source_file_location" {
   description = "The path to the source file for the Lambda function."
   type        = string
