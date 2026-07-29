@@ -2,11 +2,12 @@
 
 [![Terraform CI](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/actions/workflows/test.yml/badge.svg)](https://github.com/ZhangMaKe/tf-module-lambda-api-endpoint/actions/workflows/test.yml)
 
-This Terraform module creates an AWS Lambda function and integrates it with an API Gateway HTTP API endpoint. It provides a complete solution for deploying serverless API endpoints using AWS Lambda and API Gateway.
+This Terraform module creates an AWS Lambda function, IAM Role, and set of IAM policies, and integrates it with an API Gateway HTTP API endpoint. It provides a complete solution for deploying serverless API endpoints using AWS Lambda and API Gateway.
 
 ## Features
 
 - Creates a Lambda function with configurable settings
+- Creates IAM Role and set of policies for the function
 - Integrates the Lambda function with API Gateway HTTP API
 - Sets up necessary IAM permissions for API Gateway to invoke Lambda
 - Configurable HTTP methods (GET, PUT, POST, DELETE)
@@ -53,7 +54,8 @@ module "lambda_api_endpoint" {
 | http_route_key | The HTTP method for the API Gateway route (GET, PUT, POST, DELETE) | `string` | n/a | yes |
 | route_key | The route key for the API Gateway route | `string` | n/a | yes |
 | authorisation_type | The type of authorisation to use for the route | `string` | `NONE` | no |
-| include_lambda_log_group |  Boolean value to indicate whether to create a CloudWatch Log Group for the Lambda Function logs | `bool` | `true` | no
+| include_lambda_log_group |  Boolean value to indicate whether to create a CloudWatch Log Group for the Lambda Function logs | `bool` | `true` | no |
+| role_policies | A list of iam policy objects | `list(object)` | n/a | yes |
 
 
 ## Outputs
@@ -65,6 +67,9 @@ The module outputs the following attributes:
 - `lambda_function_invoke_arn`: The ARN to be used for invoking the Lambda function
 - `api_integration_id`: The ID of the API Gateway integration
 - `api_route_id`: The ID of the API Gateway route
+- `role_arn`: The ARN of the createc IAM Role
+- `policy_arns`: A list of ARNs for the created IAM policies
+- `policy_ids`: A list of the IDs of the created IAM policies
 
 ## Requirements
 

@@ -1,18 +1,24 @@
-module "lambda_function" {
-  source = "git::https://github.com/ZhangMaKe/tf-module-lambda-function.git?ref=v1.5.0"
-    output_path = var.lambda_output_path
-    role_arn    = var.lambda_exec_role_arn
-    source_file = var.source_file_location
-    function_name = var.function_name
-    enable_tracing = var.enable_tracing
-    environment_variables = var.environment_variables
-    include_log_group = var.include_lambda_log_group
+module "lambda_function_with_iam_role_and_policies" {
+  source = "git::https://github.com/ZhangMaKe/tf-module-lambda-function-with-iam-role-and-policies.git?ref=v1.3.0"
+
+  role_name = "${var.project_name}-${var.function_name}-function-role"
+  role_policies = var.role_policies
+
+  precreated_policy_arns = var.precreated_policy_arns
+
+  source_file = var.source_file_location
+  output_path = var.lambda_output_path
+  function_name = "${var.project_name}-${var.function_name}"
+
+  environment_variables = var.environment_variables
+
+  use_sqs_dlq = false
 }
 
 resource "aws_apigatewayv2_integration" "apigw_integration" {
   api_id                 = var.api_id
   integration_type       = "AWS_PROXY"
-  integration_uri        = module.lambda_function.invoke_arn
+  integration_uri        = module.lambda_function_with_iam_role_and_policies.invoke_arn
   payload_format_version = "2.0"
 }
 
