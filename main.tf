@@ -8,7 +8,7 @@ module "lambda_function_with_iam_role_and_policies" {
 
   source_file = var.source_file_location
   output_path = var.lambda_output_path
-  function_name = "${var.project_name}-${var.function_name}"
+  function_name = var.function_name
 
   environment_variables = var.environment_variables
 
